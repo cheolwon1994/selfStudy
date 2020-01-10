@@ -1,5 +1,8 @@
 package com.example.startingkotlin
 
+var a=3
+var b= 15
+
 fun main(){
     val hello1 : String = "Hello world"    //final
     val hello3 = "hello"        //이런 방식으로 사용해도 string으로 받아들임
@@ -10,8 +13,10 @@ fun main(){
     println(hello3)
     println(hello10())
     hello2 = "123"
+    println(maxOf(a,b))
 }
 
+fun maxOf(a: Int, b: Int) = if(a>b) a else b
 fun hello(){        //void 함수
 
 }
